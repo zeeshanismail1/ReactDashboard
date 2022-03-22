@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom';
+import {BsDoorOpen} from 'react-icons/bs'
 
 
 export const Sidebar = styled.div`
@@ -45,7 +46,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 18px;
 line-height: 25px;
-color: #109CF1;
+color: #434955;
 cursor: pointer;
 display: ${({ isOpen }) => (isOpen ? `none` : `flex`)};
 grid-gap: 5px;
@@ -75,12 +76,12 @@ display: flex;
 grid-gap: 10px;
 font-weight: 500;
 font-size: 13px;
-line-height: 20px;
-color: #334D6E;
+line-height: 19px;
+color: #434955;
 align-items: center;
 
 &.active{
-   color: #109CF1;
+   color: #00bf80;
 }
 `;
 export const ClosedIcon = styled.li`
@@ -98,4 +99,8 @@ export const FooterText = styled.div`
 display: flex;
 grid-gap: 10px;
 cursor: pointer;
+`;
+
+export const ToggleIcon = styled(BsDoorOpen)`
+color: #434955;
 `;

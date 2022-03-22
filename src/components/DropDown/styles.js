@@ -6,13 +6,14 @@ export const DropdownWrapper = styled.form`
 export const StyledSelect = styled.select`
  padding: 10px 60px 10px 14px;
  margin-bottom: 32px;
- border: none;
+ border: 1px solid #434955;
  outline: none;
- color: #109CF1;
+ color: #434955;
  border-radius: 4px;
+ width: 100%;
 `;
 export const StyledOption = styled.option`
-  color: blue;
+  color: #434955;
 `;
 
 export const StyledLabel = styled.label`

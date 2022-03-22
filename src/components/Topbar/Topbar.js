@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BurgerMenu, NotificationIcon, Searchbar,SearchIcon,Topbar, TopbarItems } from './TopbarStyles'
-import search from '../../assets/images/search.png'
 import notifications from '../../assets/images/notifications.png'
 import { Img } from "../GlobalStyles";
 
@@ -18,9 +17,7 @@ const TopBar = ({sidebarOpen,sidebartoggle}) => {
       <BurgerMenu isOpen="true" onClick={sidebartoggle}/>
         <TopbarItems isOpen={sidebarOpen}>
             <Searchbar>
-                <SearchIcon>
-                  <Img src={search} alt='search' onClick={clearInput} />
-                </SearchIcon>
+                <SearchIcon onClick={clearInput} />
                 <input type="text"
                      placeholder='Global Search...' 
                      onChange={e => setText(e.target.value)}

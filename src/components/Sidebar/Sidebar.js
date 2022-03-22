@@ -9,10 +9,10 @@ Sidebar,
 SidebarMenu, 
 LogoText, 
 FooterText,
-ClosedIcon} from './SideBarStyles';
+ClosedIcon,
+ToggleIcon} from './SideBarStyles';
 import webevis from '../../assets/images/webevis.png'
 import settings from '../../assets/images/settings.png'
-import toggle from '../../assets/images/toggle.png'
 import Heading from '../Heading/Heading';
 import { Img } from '../GlobalStyles';
 import { Divider } from '../Task/TaskStyles';
@@ -24,14 +24,14 @@ const SideBar = ({sidebarOpen, sidebartoggle}) => {
     return (
           <Sidebar className='Sidebar' isOpen={sidebarOpen}>
               <SidebarMenu isOpen={sidebarOpen}> 
-                  <LogoText >
-                      Webevis
-                      <LogoText isOpen={sidebarOpen}>Technologies</LogoText>
-                 </LogoText>
-                 <Divider />
                 <Profile>
                         <Img src={webevis} alt="webevis" />
                 </Profile>
+                 <Divider />
+                 <LogoText >
+                      Admin
+                      <LogoText isOpen={sidebarOpen}>Portal</LogoText>
+                 </LogoText>
               <SidebarsItems>
                   {SidebarData.map((item, index) => {
                       return(<>
@@ -61,7 +61,7 @@ const SideBar = ({sidebarOpen, sidebartoggle}) => {
                   </Setting>
               </SidebarMenu>
               <FooterText>
-                      <Img src={toggle} alt ='toggle' isOpen={sidebarOpen} onClick={sidebartoggle} />
+                      <ToggleIcon isOpen={sidebarOpen} onClick={sidebartoggle} />
                       <Heading level={6} isOpen={sidebarOpen}> Toggle sidebar</Heading>
               </FooterText>
           </Sidebar>

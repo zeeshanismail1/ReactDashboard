@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {FaBars} from 'react-icons/fa'
+import {MdOutlineSearch} from 'react-icons/md'
 
 
 
@@ -7,7 +8,7 @@ export const BurgerMenu = styled(FaBars)`
 display: block;
 @media screen and (max-width: 1100px) {
      display: block;
-     color: #109CF1;
+     color: #00bf80;
      position: sticky;
      z-index: 1;
      top: 20px;
@@ -47,13 +48,15 @@ display: flex;
 align-items: center;
 grid-gap: 5px;
 cursor: pointer;
+width: 100%;
 
 input{
 height: 30px;
-color: #90A0B7;
+color: #00bf80;
 border: none;
 outline: none;
 padding: 10px;
+width: 100%;
 
 ::placeholder{
 font-style: normal;
@@ -61,12 +64,13 @@ font-weight: normal;
 font-size: 12px;
 line-height: 18px;
 letter-spacing: 0.01em;
-color: #90A0B7;
+color: #00bf80;
 }
 }
 `;
 
-export const SearchIcon = styled.div`
+export const SearchIcon = styled(MdOutlineSearch)`
 width: 15px;
 height: 15px;
+color: #00bf80;
 `;

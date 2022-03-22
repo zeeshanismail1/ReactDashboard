@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 
 
 export const H1 = styled.h1`
-  color: ${({clr}) => (clr ? '#02073E' : '#109CF1')};
+  color: ${({clr}) => (clr ? '#434955' : '#00bf80')};
   font-size: 30px;
   line-height: 35px;
   text-align: ${({Cen}) => (Cen ? 'center' : 'left')};
@@ -34,8 +34,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 13px;
 line-height: 19px;
-color: ${({clr}) => (clr ? '#707683' : '#334D6E')};;
-opacity: ${({opacity}) => (opacity ? '0.5' : 'none')};
+color: ${({clr}) => (clr ? '#00bf80' : '#434955')};
 text-align: ${({Cen}) => (Cen ? 'center' : 'left')};
 `;
 
@@ -53,7 +52,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 11px;
 line-height: 16px;
-color: ${({color}) => (color ? '#192A3E' : '#90A0B7')};
+color: ${({color}) => (color ? '#192A3E' : '#00bf80')};
 `;
 export const H7 = styled.h6`
   font-size: var(--h6-font-size);

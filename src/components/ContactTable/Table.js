@@ -1,25 +1,35 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import TableRow from "./TableRow";
 import TableHeadItem from "./TableHead";
 import styled from "styled-components";
-
-const Table = ({ theadData, tbodyData}) => {
-    return (
-        <TableStyle>
-            <thead>
-                <tr>
-                    {theadData.map((h) => {
-                        return <TableHeadItem key={h} item={h} />;
-                    })}
-                </tr>
-            </thead>
-            <tbody>
-                {tbodyData.map((item) => {
-                    return <TableRow key={item.id} data={item.items} />;
-                })}
-            </tbody>
-        </TableStyle>
-    );
+import axios from "axios";
+const Table = ({theadData}) => {
+  const [user, setUser] = useState([]);
+  const fetchData = async () => {
+    try {
+      const res = await axios.get("http://localhost:5000/api/user/allUsers");
+      setUser(res.data.data);
+    } catch (err) {
+      console.log("the error", err);
+    }
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+  return (
+    <TableStyle>
+      <thead>
+        <tr>
+          {theadData.map((h) => {
+            return <TableHeadItem key={h} item={h} />;
+          })}
+        </tr>
+      </thead>
+      <tbody>
+        <TableRow data={user} />;
+      </tbody>
+    </TableStyle>
+  ); 
 };
 
 export const TableStyle = styled.table`
@@ -31,13 +41,13 @@ th{
     text-align: left;
     border-radius: 4px;
 }
-tbody tr :not(:first-child){
+tbody tr{
     height: 64px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 20px;
-    color: #707683;
+    color: #00bf80;
 }
 
 

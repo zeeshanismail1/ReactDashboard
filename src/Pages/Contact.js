@@ -15,7 +15,7 @@ margin-top: 40px;
 margin-right: 10px;
 margin-bottom: 20px;
 @media screen and (max-width: 1100px) {
-     margin: 40px 0;
+     margin: 40px 10px;
  }
 `;
 

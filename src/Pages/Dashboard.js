@@ -8,7 +8,7 @@ import TopBar from '../components/Topbar/Topbar';
 
 
 function Dashboard() {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const sidebartoggle = () =>{
     setSidebarOpen(!sidebarOpen);
 };

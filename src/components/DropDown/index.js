@@ -6,9 +6,9 @@ function Roles() {
     <div>
       <Dropdown >
         <Option selected value="Please Select Role" />
-        <Option value="CEO" />
-        <Option value="Manager" />
-        <Option value="Developer" />
+        <Option value="Super Admin" />
+        <Option value="Admin" />
+        <Option value="User" />
       </Dropdown>
     </div>
   );

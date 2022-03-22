@@ -50,7 +50,6 @@ const Card = ({Title,Subtitle,img,alt,ImgTitle,ButtonLabelOne,CardIconOne,CardIc
                 primary
                 color
                 justify
-                font
                 >{ButtonLabelTwo}
                </Button>
             </CardAction>
