@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import Roles from '../../DropDown'
-import { FormButton, Form, FormContent, FormInput, FormLabel, PasswordField } from './AddUserStyles'
+import { FormButton, Form, FormContent, FormInput, FormLabel, PasswordField } from './EditUserStyles'
 import {BiShow} from 'react-icons/bi'
 
 
-const AddUser = () => {
+const EditUser = () => {
     const [passwordShown, setPasswordShown] = useState(false);
     const togglePassword = () => {
         setPasswordShown(!passwordShown);
@@ -77,7 +77,7 @@ const AddUser = () => {
     )
 }
 
-export default AddUser
+export default EditUser
 
 
 

@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Button } from '../GlobalStyles';
 import Heading from '../Heading/Heading';
 import ModalContainer from '../ModalContainer/ModalContainer';
-import {TopLine } from '../Task/TaskStyles';
 import AddUser from './AddUser';
 import ContactTable from './ContactTable';
 const ContactData = () => {
@@ -35,6 +34,10 @@ width: 100%;
 display: flex;
 flex-direction: column;
 grid-gap: 30px;
+`;
+export const TopLine = styled.div`
+display: flex;
+justify-content: space-between;
 `;
 
 export default ContactData

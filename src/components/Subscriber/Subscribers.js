@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Table from './Table'
-const ContactTable = () => {
-    const theadData = [ "Name", "Email", "Role", "Edit", "Delete","Status"];
+import Table from './SubscriberTable'
+const Subscribers = () => {
+    const theadData = [ "Name", "Email"];
 
     return (
         <TableContent>
@@ -15,4 +15,4 @@ export const TableContent = styled.div`
 overflow-x: auto;
 `;
 
-export default ContactTable;
+export default Subscribers;

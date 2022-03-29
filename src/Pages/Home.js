@@ -1,28 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
-import Charts from '../components/Charts/Charts';
-import TaskPage from '../components/Task/Task'
+import ContactData from '../components/ContactTable/ContactData';
 
 const Home = ({sidebarOpen}) => {
   return (
-    <HomeContent isOpen={sidebarOpen}>
-      <TaskPage />
-      <Charts />
-    </HomeContent>
+    <ContactContent isOpen={sidebarOpen}>
+        <ContactData />
+    </ContactContent>
   )
 }
-const HomeContent = styled.div`
+const ContactContent = styled.div`
 margin-left:  ${({ isOpen }) => (isOpen ? `100px` : `270px`)};
-margin-top: 20px;
+margin-top: 40px;
 margin-right: 10px;
 margin-bottom: 20px;
-display: flex;
-grid-gap: 20px;
 @media screen and (max-width: 1100px) {
-  margin: 40px 0;
- }
- @media screen and (max-width: 920px) {
-     flex-wrap: wrap;
+     margin: 40px 10px;
  }
 `;
 

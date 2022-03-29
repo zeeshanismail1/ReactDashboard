@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
-import ContactData from '../components/ContactTable/ContactData';
+import Queries from '../components/Queries';
 
-const Contact = ({sidebarOpen}) => {
+const Email = ({sidebarOpen}) => {
   return (
-    <ContactContent isOpen={sidebarOpen}>
-        <ContactData />
-    </ContactContent>
+    <EmailContent isOpen={sidebarOpen}>
+        <Queries />
+    </EmailContent>
   )
 }
-const ContactContent = styled.div`
+const EmailContent = styled.div`
 margin-left:  ${({ isOpen }) => (isOpen ? `100px` : `270px`)};
 margin-top: 40px;
 margin-right: 10px;
@@ -19,4 +19,4 @@ margin-bottom: 20px;
  }
 `;
 
-export default Contact
+export default Email

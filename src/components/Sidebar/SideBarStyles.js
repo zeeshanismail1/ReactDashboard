@@ -104,3 +104,9 @@ cursor: pointer;
 export const ToggleIcon = styled(BsDoorOpen)`
 color: #434955;
 `;
+
+export const Divider = styled.div`
+background: #00bf80;
+height: 1px;
+width: 100%;
+`;

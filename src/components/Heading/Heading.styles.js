@@ -36,6 +36,7 @@ font-size: 13px;
 line-height: 19px;
 color: ${({clr}) => (clr ? '#00bf80' : '#434955')};
 text-align: ${({Cen}) => (Cen ? 'center' : 'left')};
+cursor: ${({Cur}) => (Cur ? 'pointer' : 'none')};
 `;
 
 export const H5 = styled.h5`

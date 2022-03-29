@@ -10,12 +10,12 @@ SidebarMenu,
 LogoText, 
 FooterText,
 ClosedIcon,
+Divider,
 ToggleIcon} from './SideBarStyles';
 import webevis from '../../assets/images/webevis.png'
 import settings from '../../assets/images/settings.png'
 import Heading from '../Heading/Heading';
 import { Img } from '../GlobalStyles';
-import { Divider } from '../Task/TaskStyles';
 
 
 

@@ -1,18 +1,19 @@
 import React from 'react'
-import {MdOutlineDashboard,MdOutlineIndeterminateCheckBox,MdOutlineEmail,MdOutlineChatBubbleOutline} from 'react-icons/md'
+import {MdOutlineEmail} from 'react-icons/md'
 import {HiOutlineUser} from 'react-icons/hi'
-import {BsLayoutThreeColumns} from 'react-icons/bs'
+import {FaUsers} from 'react-icons/fa'
+import {SiMicrodotblog} from 'react-icons/si'
 
 export const SidebarData = [
     {
         title: 'Users',
-        path: '/contact',
+        path: '/',
         icon: <HiOutlineUser />,
     },
     {
-        title: 'Tasks',
-        path: '/task',
-        icon: <MdOutlineIndeterminateCheckBox/>,
+        title: 'Subscribers',
+        path: '/subscribers',
+        icon: <FaUsers/>,
     },
     {
         title: 'Email',
@@ -20,18 +21,8 @@ export const SidebarData = [
         icon: <MdOutlineEmail />,
     },
     {
-        title: 'Dashboard',
-        path: '/',
-        icon: <MdOutlineDashboard />,
-    },
-    {
-        title: 'Chat',
-        path: '/chat',
-        icon: <MdOutlineChatBubbleOutline/>,
-    },
-    {
-        title: 'Deals',
-        path: '/deal',
-        icon: <BsLayoutThreeColumns />,
+        title: 'Blogs',
+        path: '/blogs',
+        icon: <SiMicrodotblog />,
     },
 ]

@@ -3,24 +3,27 @@ import styled from 'styled-components'
 import Heading from '../../Heading/Heading'
 import Lin from '../../../assets/images/Lin.png'
 
-const UserDetail = () => {
-  return (
-    <UserData>
+const UserDetail = ({data}) => {
+  return data.map((item) => {
+    return (<>
+    <UserData key={item._id}>
         <Name>
             <img src={Lin} alt="Lin" />
-            <Heading level={4} opacity >Lindsey Stroud</Heading>
+            <Heading level={4} opacity >{item.firstName}</Heading>
         </Name>
         <Email>	
             <Heading level={4}>Email :</Heading>
-            <Heading level={4} opacity>	lindsey.stroud@gmail.com</Heading>
+            <Heading level={4} opacity>	{item.Email}</Heading>
         </Email>
         <Role>
             <Heading level={4}>Role :</Heading>
-            <Heading level={4} opacity>Manager</Heading>
+            <Heading level={4} opacity>{item.Role}</Heading>
         </Role>
     </UserData>
-  )
-}
+    </>
+    );
+  });
+};
 
 export const UserData = styled.div`
 background: #FFFFFF;
