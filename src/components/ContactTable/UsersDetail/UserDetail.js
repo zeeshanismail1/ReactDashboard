@@ -1,15 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import Heading from '../../Heading/Heading'
-import Lin from '../../../assets/images/Lin.png'
 
 const UserDetail = ({data}) => {
   return data.map((item) => {
-    return (<>
+    return (
     <UserData key={item._id}>
         <Name>
-            <img src={Lin} alt="Lin" />
-            <Heading level={4} opacity >{item.firstName}</Heading>
+            <Heading level={4} opacity >{item.name}</Heading>
         </Name>
         <Email>	
             <Heading level={4}>Email :</Heading>
@@ -20,7 +18,6 @@ const UserDetail = ({data}) => {
             <Heading level={4} opacity>{item.Role}</Heading>
         </Role>
     </UserData>
-    </>
     );
   });
 };

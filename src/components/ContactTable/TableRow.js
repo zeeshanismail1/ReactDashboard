@@ -56,7 +56,7 @@ const TableRow = ({data}) => {
         />
       </td>
       <td onClick={() => handleDelete(item._id)}>
-        <MdDelete />
+        <DeleteIcon />
       </td>
       <td>
         <Button onClick={onClick}>
